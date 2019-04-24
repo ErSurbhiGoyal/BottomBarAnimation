@@ -1,4 +1,4 @@
-
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 
 apply plugin: 'kotlin-android'
@@ -10,7 +10,8 @@ def library_artifactId = 'bottombarnavigation'
 def library_versionCode = 1_0_01_00_01
 def library_versionName = '1.0.1'
 
-/*publish {
+publish {
+    userOrg = 'SurAndroid'
     repoName = 'BottomBarAnimation'
     groupId = library_groupId
     artifactId = library_artifactId
@@ -18,7 +19,7 @@ def library_versionName = '1.0.1'
     desc = 'Bottom Navigation Animation'
     website = 'https://github.com/ErSurbhiGoyal/BottomBarAnimation'
 
-}*/
+}
 
 android {
     compileSdkVersion compileSdk_version
