@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CellImageView">
+        <attr name="btm_imageview_useColor" format="boolean" />
+        <attr name="btm_imageview_isBitmap" format="boolean" />
+        <attr name="btm_imageview_resource" format="reference" />
+        <attr name="btm_imageview_color" format="color" />
+        <attr name="btm_imageview_size" format="dimension" />
+        <attr name="btm_imageview_isAction" format="boolean" />
+        <attr name="btm_imageview_actionBackgroundAlpha" format="boolean" />
+        <attr name="btm_imageview_changeSize" format="boolean" />
+        <attr name="btm_imageview_fitImage" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomNavigationAnimation">
+        <attr name="sur_defaultIconColor" format="color" />
+        <attr name="sur_selectedIconColor" format="color" />
+        <attr name="sur_backgroundBottomColor" format="color" />
+        <attr name="sur_countTextColor" format="color" />
+        <attr name="sur_countBackgroundColor" format="color" />
+        <attr name="sur_countTypeface" format="string" />
+        <attr name="sur_rippleColor" format="color" />
+        <attr name="sur_shadowColor" format="color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,51 @@
+
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+def library_groupId = 'com.suroid'
+def library_artifactId = 'bottombarnavigation'
+def library_versionCode = 1_0_01_00_01
+def library_versionName = '1.0.1'
+
+/*publish {
+    repoName = 'BottomBarAnimation'
+    groupId = library_groupId
+    artifactId = library_artifactId
+    publishVersion = library_versionName
+    desc = 'Bottom Navigation Animation'
+    website = 'https://github.com/ErSurbhiGoyal/BottomBarAnimation'
+
+}*/
+
+android {
+    compileSdkVersion compileSdk_version
+
+    defaultConfig {
+        minSdkVersion minSdk_version
+        targetSdkVersion targetSdk_version
+        versionCode library_versionCode
+        versionName library_versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+}
