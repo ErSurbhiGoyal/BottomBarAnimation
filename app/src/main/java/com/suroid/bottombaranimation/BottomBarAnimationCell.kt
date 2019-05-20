@@ -59,7 +59,7 @@ class BottomBarAnimationCell : RelativeLayout, LayoutContainer {
             }
         }
 
-    private var iconSize = dip(context, 24)
+    private var iconSize = dip(context, 28)
         set(value) {
             field = value
             if (allowDraw) {
@@ -122,7 +122,7 @@ class BottomBarAnimationCell : RelativeLayout, LayoutContainer {
 
             ViewCompat.setElevation(v_circle, if (progress > 0.7f) dipf(context, progress * 4f) else 0f)
 
-            val m = dip(context, 24)
+            val m = dip(context, 28)
             v_circle.x = (1f - progress) * (if (isFromLeft) -m else m) + ((measuredWidth - dip(context, 48)) / 2f)
             v_circle.y = (1f - progress) * measuredHeight + dip(context, 6)
 

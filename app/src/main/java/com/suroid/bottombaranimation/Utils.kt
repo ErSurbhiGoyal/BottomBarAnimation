@@ -48,7 +48,7 @@ internal object DrawableHelper{
 internal object ColorHelper{
 
     fun mixTwoColors(color1: Int, color2: Int, amount: Float): Int {
-        val alphaChannel = 24
+        val alphaChannel = 28
         val redChannel = 16
         val greenChannel = 8
 

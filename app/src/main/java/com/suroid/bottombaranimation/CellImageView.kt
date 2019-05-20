@@ -33,7 +33,7 @@ internal class CellImageView : AppCompatImageView {
             field = value
             draw()
         }
-    var size = dip(context, 24)
+    var size = dip(context, 28)
         set(value) {
             field = value
             requestLayout()
