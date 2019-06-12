@@ -124,7 +124,7 @@ class BottomBarAnimationCell : RelativeLayout, LayoutContainer {
 
             val m = dip(context, 28)
             v_circle.x = (1f - progress) * (if (isFromLeft) -m else m) + ((measuredWidth - dip(context, 48)) / 2f)
-            v_circle.y = (1f - progress) * measuredHeight + dip(context, 6)
+            v_circle.y = (1f - progress) * measuredHeight + dip(context, 8)
 
 
         }
